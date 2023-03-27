@@ -24,3 +24,16 @@ let nombre = "Juan";
 console.log(`${mensaje}, ${welcome}: ${nombre}`);
 
 let i: number | undefined;
+
+
+function suma(x: number, y: number) {
+    console.log(x + y);
+}
+
+function inc(x: number) {
+    return x + 1;
+}
+
+suma(10, 20);
+
+let resultado = x => console.log(x + 1);
