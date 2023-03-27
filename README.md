@@ -1,4 +1,4 @@
-# Respositorio para el curso de Angular CoreNetworks - Banco Santander (27 al 31 de Marzo 2023)
+# Respositorio para el curso de Angular CoreNetworks - Banco Santander (Del 27 al 31 de Marzo 2023)
 
 ## Entorno de desarrollo
 
