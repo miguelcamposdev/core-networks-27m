@@ -1,0 +1,8 @@
+<div *ngIf="isLoading; else templateFilms">
+  Cargando datos...
+</div>
+<ng-template #templateFilms>
+  <ul>
+    <li *ngFor="let item of listadoPeliculas">{{item.title}}</li>
+  </ul>
+</ng-template>
