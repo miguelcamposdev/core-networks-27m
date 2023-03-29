@@ -6,7 +6,7 @@
 - Crear un componente ListadoAlumnosComponent.
 - Declarar una lista de alumnos en el componente, con datos de ejemplo.
 - Listar los elementos en el HTML haciendo uso de la directiva ngFor.
-- Utilizar Angular Material para listar los elementos, haciendo uso por ejemplo del componente Card.
+- Utilizar Angular Bootstrap para listar los elementos, haciendo uso por ejemplo del componente Card.
 
 ## Ejercicio 2
 
