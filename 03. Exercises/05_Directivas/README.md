@@ -23,3 +23,4 @@ Sobre el listado realizado en el ejercicio anterior:
 - Añadir a la interface Alumno la propiedad sexo (puede declararse con un Enum: hombre, mujer).
 - Modificar el listado, para que con la directiva ngIf se muestra un icono si es hombre y otro distinto si es mujer en cada elemento.
 - Modificar además el estilo de cada elemento haciendo que se muestre en algún color distinto aquellos que sean menores de edad (hacer uso de ngClass o ngStyle).
+- Aplicar un pipe para que en función de si es hombre o mujer muestre un icono diferente.
