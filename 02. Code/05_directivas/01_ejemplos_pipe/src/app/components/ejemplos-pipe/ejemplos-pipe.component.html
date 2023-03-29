@@ -1,0 +1,18 @@
+<p>Precio producto: {{precioProducto | dollar}}</p>
+
+<p>{{'Miguel Campos' | uppercase}}</p>
+
+
+<p *ngIf="esDeDia;else textoEsDeNoche">
+  Es de día
+</p>
+
+<ng-template #textoEsDeNoche>
+  <p>
+    Es de noche
+  </p>
+</ng-template>
+
+<button type="button" (click)="cambiarDiaNoche()">
+  Cambiar día/noche
+</button>

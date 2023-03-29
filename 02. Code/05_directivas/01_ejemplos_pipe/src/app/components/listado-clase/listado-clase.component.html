@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let alumno of listadoAlumnos">
+    <img [src]="getAlumnoFoto(alumno)" height="60px" />
+    {{alumno.nombre}} {{alumno.apellidos}}, {{alumno.edad}} años
+  </li>
+</ul>
