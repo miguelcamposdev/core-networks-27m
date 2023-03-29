@@ -6,13 +6,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ListadoPokemonComponent } from './components/listado-pokemon/listado-pokemon.component';
 import { PokemonPipe } from './pipes/pokemon.pipe';
 import { PokeminItemComponent } from './components/pokemin-item/pokemin-item.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoPokemonComponent,
     PokemonPipe,
-    PokeminItemComponent
+    PokeminItemComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
