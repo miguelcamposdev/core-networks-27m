@@ -1,6 +1,14 @@
-# CHALLENGE: Formulario de login
+# CHALLENGE: Directivas
 
 ## Ejercicio 1
+
+- Crear una interface Pokemon, que contenga id y nombre del pokemon.
+- Crear un componente ListadoPokemonComponent.
+- Declarar una lista de Pokemon en el componente, con datos de ejemplo.
+- Listar los pokemom en el HTML haciendo uso de la directiva ngFor.
+- Utilizar Angular Bootstrap para listar los elementos, haciendo uso por ejemplo del componente Card.
+
+## Ejercicio 2
 
 - Crear una interface Alumno, que contenga nombre, apellidos, edad.
 - Crear un componente ListadoAlumnosComponent.
@@ -8,7 +16,7 @@
 - Listar los elementos en el HTML haciendo uso de la directiva ngFor.
 - Utilizar Angular Bootstrap para listar los elementos, haciendo uso por ejemplo del componente Card.
 
-## Ejercicio 2
+## Ejercicio 3
 
 Sobre el listado realizado en el ejercicio anterior:
 
