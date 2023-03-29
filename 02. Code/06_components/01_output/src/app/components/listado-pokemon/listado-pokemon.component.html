@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-12" *ngIf="pokemonSeleccionado; else templateNoSeleccionado">
+    Pokemon seleccionado: {{pokemonSeleccionado}}
+  </div>
+  <ng-template #templateNoSeleccionado>
+    <div class="col-12">
+      No hay pokemon seleccionado
+    </div>
+  </ng-template>
+</div>
+<div class="row">
+
+  <div class="col-3" *ngFor="let item of listadoPokemon">
+    <app-pokemin-item [pokemonInput]="item" (pokemonSelected)="setNewPokemonSelected($event)"></app-pokemin-item>
+  </div>
+</div>

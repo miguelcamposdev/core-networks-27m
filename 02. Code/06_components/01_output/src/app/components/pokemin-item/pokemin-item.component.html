@@ -1,0 +1,9 @@
+<div class="card">
+  <img [src]="pokemonInput.url | pokemonImg" class="card-img-top" [alt]="pokemonInput.name">
+  <div class="card-body">
+    <h5 class="card-title">{{pokemonInput.name}}</h5>
+    <p class="card-text">Para más información pulsar en el siguiente botón.
+    </p>
+    <button type="button" class="btn btn-primary" (click)="enviarPokemonSeleccionado()">Select</button>
+  </div>
+</div>
