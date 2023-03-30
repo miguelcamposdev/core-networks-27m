@@ -15,7 +15,8 @@ export class LoginComponent {
     console.log(`${this.loginForm.controls.emailControl.value}, ${this.loginForm.controls.passwordControl.value}`);
   }
 
-  /*getError(controlName: string): boolean {
-    return this.loginForm.controls[controlName].invalid && this.loginForm.controls[`${controlName}`].dirty && this.loginForm.controls[controlName].touched;
-    }*/
+  showErrors(controlName: string) {
+    let control = this.loginForm.get([controlName]);
+    return control?.invalid && control?.dirty && control?.touched;
+  }
 }

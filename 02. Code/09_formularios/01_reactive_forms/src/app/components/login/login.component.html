@@ -3,7 +3,7 @@
     <div class="col-3 mb-3">
       <label for="email" class="form-label">Email:</label>
       <input type="email" class="form-control" id="email" placeholder="Write an email" formControlName="emailControl">
-      <div class="alert alert-danger" *ngIf="loginForm.controls.emailControl.invalid">
+      <div class="alert alert-danger" *ngIf="showErrors('emailControl')">
         Please write a correct email
       </div>
     </div>
@@ -13,8 +13,7 @@
       <label for="password" class="form-label">Password:</label>
       <input type="password" class="form-control" id="password" placeholder="Write a password"
         formControlName="passwordControl">
-      <div class="alert alert-danger"
-        *ngIf="loginForm.controls['passwordControl'].invalid && loginForm.controls['passwordControl'].dirty && loginForm.controls['passwordControl'].touched">
+      <div class="alert alert-danger" *ngIf="showErrors('passwordControl')">
         <span *ngIf="loginForm.controls.passwordControl.errors?.['required']">Please write a password</span>
         <span *ngIf="loginForm.controls.passwordControl.errors?.['minlength']">Min length password: 5 characters</span>
       </div>
