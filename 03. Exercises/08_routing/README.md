@@ -4,15 +4,15 @@
 
 Según el ejercicio visto sobre el listado de People de la API de Star Wars, crear la lista de películas de Star WARS que se puede consultar en el siguiente endpoint:
 
-https://swapi.dev/api/films
+https://swapi.dev/api/planets
 
-Se debe dibujar una lista de las películas (lo más bonita posible, pero sin tampoco perder mucho tiempo) y que se muestre el nombre de la película y un botón para navegar al detalle. La navegación al detalle, debe hacer con Angular Routing, pasando como parámetro el id de la película.
+Se debe dibujar una lista de las planetas (lo más bonita posible, pero sin tampoco perder mucho tiempo) y que se muestre el nombre del planeta y un botón para navegar al detalle. La navegación al detalle, debe hacer con Angular Routing, pasando como parámetro el id del planeta.
 
-Deberá programarse por tanto un componente para mostrar el detalle de una película y que se pueda mostrar ahí toda la información de la película cuyo id me ha llegado por parámetro a través de la URL. El endpoint para obtener la información de una película a través de su id es:
+Deberá programarse por tanto un componente para mostrar el detalle de un planeta y que se pueda mostrar ahí toda la información del planeta cuyo id me ha llegado por parámetro a través de la URL. El endpoint para obtener la información de una película a través de su id es:
 
-https://swapi.dev/api/films/1
+https://swapi.dev/api/planets/1
 
-Siendo en este caso la URL para mostrar la película con ID 1.
+Siendo en este caso la URL para mostrar el planeta con ID 1.
 
 ## Ejercicio 2
 
