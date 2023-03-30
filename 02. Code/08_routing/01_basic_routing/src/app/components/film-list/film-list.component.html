@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-3" *ngFor="let item of listadoPeliculas">
+    <div class="card" style="width: 18rem;">
+      <img [src]="getFilmPoster(item)" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}} <strong><i>{{item.release_date}}</i></strong></h5>
+        <p class="card-text">{{item.opening_crawl.length >= 40? item.opening_crawl.substring(0, 39)+'...':
+          item.opening_crawl}}
+        </p>
+        <button [routerLink]="['/film', getFilmId(item)]" class="btn btn-primary">Ir al detalle</button>
+      </div>
+    </div>
+  </div>
+
+</div>
