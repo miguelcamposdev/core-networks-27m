@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-3 mb-3">
+    <label for="accessCode" class="form-label">Write code to access:</label>
+    <input type="password" class="form-control" id="accessCode" placeholder="Write a correct code" [formControl]="code">
+  </div>
+</div>
+<div class="row">
+  <div col-12>
+    <button type="button" class="btn btn-danger" (click)="resetForm()" *ngIf="code.value != ''">Reset</button>
+    &nbsp;<button type="button" class="btn btn-primary" (click)="sendForm()" *ngIf="code.value != ''">Enviar</button>
+  </div>
+</div>
+
+<!--<div class="row">
+  Código: {{code.value}}
+</div>-->
