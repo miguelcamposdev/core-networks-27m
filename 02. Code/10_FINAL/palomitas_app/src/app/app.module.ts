@@ -7,12 +7,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MoviePopularComponent } from './components/movie-popular/movie-popular.component';
+import { UserPermissionComponent } from './components/user-permission/user-permission.component';
+import { MyProfilePageComponent } from './pages/my-profile-page/my-profile-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MoviePopularComponent
+    MoviePopularComponent,
+    UserPermissionComponent,
+    MyProfilePageComponent
   ],
   imports: [
     BrowserModule,
