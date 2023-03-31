@@ -14,10 +14,10 @@ export class MovieService {
   constructor(private http: HttpClient) { }
 
   getPopular(): Observable<MoviePopularRoot> {
-    return this.http.get<MoviePopularRoot>(`${MOVIE_BASE_URL}/popular?api_key=${environment.apiKey}`);
+    return this.http.get<MoviePopularRoot>(`${MOVIE_BASE_URL}/popular`);
   }
 
   getLatest(): Observable<MoviePopularRoot> {
-    return this.http.get<MoviePopularRoot>(`${MOVIE_BASE_URL}/latest?api_key=${environment.apiKey}`);
+    return this.http.get<MoviePopularRoot>(`${MOVIE_BASE_URL}/latest`);
   }
 }

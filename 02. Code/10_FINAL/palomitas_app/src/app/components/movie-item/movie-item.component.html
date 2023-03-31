@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="getPoster(movie)" class="card-img-top" alt="...">
+  <div class="card-body">
+    <form [formGroup]="addToListForm">
+      <h5 class="card-title">{{movie.original_title}}</h5>
+      <p class="card-text">{{movie.overview}}</p>
+      <select class="form-select" aria-label="Default select example" formControlName="listaSeleccionada">
+        <option selected>- Select list -</option>
+        <option [value]="item.id" *ngFor="let item of listasUsuario">{{item.name}}</option>
+      </select>
+      <button class="btn btn-primary" (click)="addMovieToList(movie.id)" *ngIf="addToListForm.valid">Add</button>
+    </form>
+  </div>
+</div>

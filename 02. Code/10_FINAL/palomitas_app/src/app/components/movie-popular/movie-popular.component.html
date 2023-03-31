@@ -1,12 +1,5 @@
 <div class="row">
   <div class="col-4" *ngFor="let item of listadoPeliculas">
-    <div class="card" style="width: 18rem;">
-      <img [src]="getPoster(item)" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{item.original_title}}</h5>
-        <p class="card-text">{{item.overview}}</p>
-        <a href="#" class="btn btn-primary">Go to detail</a>
-      </div>
-    </div>
+    <app-movie-item [movie]="item" [listasUsuario]="listasUsuario"></app-movie-item>
   </div>
 </div>

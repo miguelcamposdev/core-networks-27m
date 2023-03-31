@@ -18,7 +18,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   createRequestToken(): Observable<RequestTokenRoot> {
-    return this.http.get<RequestTokenRoot>(`${AUTH_BASE_URL}/token/new?api_key=${environment.apiKey}`);
+    return this.http.get<RequestTokenRoot>(`${AUTH_BASE_URL}/token/new`);
   }
 
   createSession(): Observable<CreateSessionRoot> {
@@ -28,7 +28,7 @@ export class AuthService {
       sessionDto = new CreateSessionDto(token);
     }
     return this.http.post<CreateSessionRoot>(
-      `${AUTH_BASE_URL}/session/new?api_key=${environment.apiKey}`,
+      `${AUTH_BASE_URL}/session/new`,
       sessionDto,
       { 'headers': new HttpHeaders({
         'Content-Type': 'application/json'

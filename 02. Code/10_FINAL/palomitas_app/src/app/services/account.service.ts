@@ -17,6 +17,6 @@ export class AccountService {
 
   getDetails(): Observable<AccountDetailsRoot> {
     let sessionId = localStorage.getItem(Constants.LOCAL_SESSION_ID);
-    return this.http.get<AccountDetailsRoot>(`${ACCOUNT_BASE_URL}?api_key=${environment.apiKey}&session_id=${sessionId}`);
+    return this.http.get<AccountDetailsRoot>(`${ACCOUNT_BASE_URL}`);
   }
 }

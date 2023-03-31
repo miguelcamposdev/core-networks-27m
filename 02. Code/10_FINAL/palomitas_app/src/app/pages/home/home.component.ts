@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.authService.createRequestToken().subscribe(resp => {
       console.log(resp);
       localStorage.setItem(Constants.LOCAL_REQUEST_TOKEN, resp.request_token);
-      window.location.href = `https://www.themoviedb.org/authenticate/${resp.request_token}?redirect_to=http://localhost:58636/user-permission`;
+      window.location.href = `https://www.themoviedb.org/authenticate/${resp.request_token}?redirect_to=http://localhost:49673/user-permission`;
     });
     }
 
